@@ -2,11 +2,10 @@ name: popWinTracker
 
 on:
   push:
-      branches:
-        -master
-      schedule:
-        -cron: "0 */1 * * *"
-        
+    branches: -master
+    schedule:
+      -cron: "*/15 * * * *"
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -14,12 +13,12 @@ jobs:
       - name: 🍽️ Get working copy
         uses: actions/checkout@master
         with:
-          fetch-depth: 1                                                                 
-      - name: 🐍 Set up Python 3.8                               
-        uses: actions/setup-python@v2                               
-        with:                                 
-          python-version: '3.8'                                                   
-      - name: 💿 Install Requirements                             
+          fetch-depth: 1
+      - name: 🐍 Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+      - name: 💿 Install Requirements
         run: pip install -r requirements.txt
       - name: 🍳 Update dataset
         run: python app.py
