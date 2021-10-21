@@ -14,9 +14,9 @@ def winScraper(url):
 
 
 def textGenerator(currentWinCount):
-    s = '<p style = "text-align: center"> Greg Popovich is <span style = "color: green" > ' + \
+    s = '<span style = "text-align: center"> Greg Popovich is <span style = "color: green" > ' + \
         str(1336 - currentWinCount) + \
-        ' wins </span > away from becoming the all-time leader in regular season wins for an NBA coach.</p>'
+        ' wins </span > away from becoming the all-time leader in regular season wins for an NBA coach.</span>'
     return s
 
 
