@@ -1,6 +1,6 @@
 # popWinTracker
 
-This simple scraper goes to [basketball-reference.com's](https://www.basketball-reference.com/coaches/popovgr99c.html) stats page for Greg Popovich to see how many wins he has.
+This simple scraper goes to [basketball-reference.com's](https://www.basketball-reference.com/coaches/popovgr99c.html) stats page for Gregg Popovich to see how many wins he has.
 
 It then checks to see how many he needs to become the all-time leader in regular season wins and formats it into a string for a widget on the [San Antonio Express-News' home page](expressnews.com/).
 
